@@ -37,8 +37,8 @@
 
 ##  Connecting to Database 
 
- connHandle <-odbcConnect(dsn="pooja",uid = "root",pwd = "resource@22")
-#########################################################
+ connHandle <-odbcConnect(dsn="p***a",uid = "root",pwd = "r*********2")
+#################################################################################################################################################################
 
 ###  USER INTERFACE  ###
 
@@ -132,7 +132,7 @@ server <- function(input, output) {
     ## data() is a reactive variable and holds the data w.r.t to the choice made by the user and changes based on selection from user
   })
   
-  ####################  Summary   ################################
+  ####################  Summary   #####################################
   output$summary <- renderPrint({  req(data()) 
     summary(data()[2:7]) }) 
   

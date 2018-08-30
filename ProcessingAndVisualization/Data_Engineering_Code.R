@@ -1,7 +1,7 @@
 Parameterfile=read.csv("C:/Users/e0013353/Desktop/Parmeter/DATA/ParameterFile.csv",header = TRUE)
 library(sqldf)
 library(RODBCext)
-connHandle <-odbcConnect("ses",uid = "root",pwd = "root")
+connHandle <-odbcConnect("**s",uid = "root",pwd = "root")
 dataf<-data.frame()
 for(i in 1:nrow(Parameterfile))   
 {
@@ -25,7 +25,7 @@ for(i in 1:nrow(Parameterfile))
               subject="Data Extraction Process has been Completed",
               body = "Hello Team, 
               The Data Extraction from Database has been successfully completed and files has been placed in the folders",
-              smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="seshan1490@gmail.com",passwd="Varadan@64",ssl=TRUE),
+              smtp = list(host.name = "smtp.gmail.com", port = 465,user.name="**********@gmail.com",passwd="********",ssl=TRUE),
               authenticate = TRUE,
               send = TRUE)
     Paramfile=read.csv("C:/Users/e0013353/Desktop/Parmeter/Outlier/ParameterFile.csv",header = TRUE)##To Read the paremeter file##
@@ -243,21 +243,21 @@ getOutlierRecordsFromfile<-function(Sfilename,Scolumname,x,y,unid,sdf) ##functio
   library(zoo)
   ##file_dict=setwd("C:/Users/e0013353/Desktop/input/Files")  ## To set the file Directory##
   file_dict=setwd(sdf)
-  file=read.csv(Sfilename)   ## To read the file given file ##
-  summary(file)              ## To to get summary of file ##
-  UpperOutlierRange=x                 ##Assigning user given upperoutlier range##
-  LowerOutlierRange=y                 ##Assigning user given loweroutlier rage##
-  file$Flag<-NA                       ##To create a new flag column###
-  colname=colnames(file[Scolumname])  ##To get column name ##
-  medianValue=median(file[,Scolumname]) ##To get the median value ####
+  file=read.csv(Sfilename)                      ## To read the file given file ##
+  summary(file)                                 ## To to get summary of file ##
+  UpperOutlierRange=x                          ##Assigning user given upperoutlier range##
+  LowerOutlierRange=y                          ##Assigning user given loweroutlier rage##
+  file$Flag<-NA                                ##To create a new flag column###
+  colname=colnames(file[Scolumname])           ##To get column name ##
+  medianValue=median(file[,Scolumname])        ##To get the median value ####
   boxplot(file[,Scolumname], main="BOX PLOT", boxwex=0.1,xlab=colname,ylab="Range") ##To draw a box plot##
   Upper_Outlier <- subset(file, file[,Scolumname] > UpperOutlierRange, select = 1:ncol(file)) ##To find the value greater than upper outlier value###
   lower_Outlier <- subset(file, file[,Scolumname] < LowerOutlierRange, select = 1:ncol(file)) ##To find the value less than lower outlier value##
-  AllOutlierRecords <- rbind(lower_Outlier,Upper_Outlier)### To bind the upper and lower outlier records###
+  AllOutlierRecords <- rbind(lower_Outlier,Upper_Outlier)   ### To bind the upper and lower outlier records###
   CleanRecords <- subset(file,!(file[,Scolumname] %in% AllOutlierRecords[,Scolumname]),select=c(8,1,Scolumname))##To remove the outlier records from the normal  data##
   CleanRecords$date_time=as.POSIXct(CleanRecords$date_time,format='%Y-%m-%d %H:%M:%S')
   mfile1<-zoo(CleanRecords[,-1],CleanRecords[,1])
-  mfile2 <- merge(mfile1,zoo(,seq(start(mfile1),end(mfile1),by="10 secs")), all=TRUE)
+  mfile2 <- merge(mfile1,zoo(seq(start(mfile1),end(mfile1),by="10 secs")), all=TRUE)
   df=as.data.frame(mfile2)                         
   Date_time=index(mfile2)
   Date_time=as.character(as.POSIXct(Date_time))
