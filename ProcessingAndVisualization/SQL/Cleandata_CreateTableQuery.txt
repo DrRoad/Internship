@@ -1,0 +1,11 @@
+######################################Create Table Clean Data#################################################
+CREATE TABLE `cleandata` (
+  `Date_time` timestamp NULL DEFAULT NULL,
+  `unitid` varchar(45) DEFAULT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

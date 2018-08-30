@@ -1,0 +1,11 @@
+file,DateColumn,MiutesToTranform,unitid,Zone ,floor,file path
+SS0036.csv,1,5,SS0036,East,5,C:/Users/e0013353/Desktop/Aggregated Data/Data/5 Minutes
+SS0036.csv,1,15,SS0036,East,5,C:/Users/e0013353/Desktop/Aggregated Data/data/15 Minutes
+SS0036.csv,1,30,SS0036,East,5,C:/Users/e0013353/Desktop/Aggregated Data/data/30 Minutes
+SS0036.csv,1,60,SS0036,East,5,C:/Users/e0013353/Desktop/Aggregated Data/Data/1 Hour
+SS0036.csv,1,1440,SS0036,East,5,C:/Users/e0013353/Desktop/Aggregated Data/Data/24 Hours
+SS0031.csv,1,5,SS0031,West,5,
+SS0031.csv,1,15,SS0031,West,5,
+SS0031.csv,1,30,SS0031,West,5,
+SS0031.csv,1,60,SS0031,West,5,
+SS0031.csv,1,1440,SS0031,West,5,

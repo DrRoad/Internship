@@ -1,0 +1,86 @@
+#############################################Aggregation Create Table Query########################################
+--------------------FiveMinuteData------------------------------------
+CREATE TABLE `fivemindata` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Days` varchar(45) DEFAULT NULL,
+  `Weekday` varchar(45) DEFAULT NULL,
+  `Zone` varchar(45) DEFAULT NULL,
+  `Level` int(11) DEFAULT NULL,
+  `Hours` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+####################################################################################################################
+---------------------fifteenMinuteData------------------------------------------------
+CREATE TABLE `fifteenmindata` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Days` varchar(45) DEFAULT NULL,
+  `Weekday` varchar(45) DEFAULT NULL,
+  `Zone` varchar(45) DEFAULT NULL,
+  `Level` int(11) DEFAULT NULL,
+  `Hours` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+####################################################################################################################
+---------------------ThirtyMinuteData------------------------------------------------
+CREATE TABLE `thirtymindata` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Days` varchar(45) DEFAULT NULL,
+  `Weekday` varchar(45) DEFAULT NULL,
+  `Zone` varchar(45) DEFAULT NULL,
+  `Level` int(11) DEFAULT NULL,
+  `Hours` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+####################################################################################################################
+---------------------SixtyMinuteData------------------------------------------------
+CREATE TABLE `sixtymindata` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Days` varchar(45) DEFAULT NULL,
+  `Weekday` varchar(45) DEFAULT NULL,
+  `Zone` varchar(45) DEFAULT NULL,
+  `Level` int(11) DEFAULT NULL,
+  `Hours` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+####################################################################################################################
+---------------------OneDayData------------------------------------------------
+CREATE TABLE `onedaydata` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Days` varchar(45) DEFAULT NULL,
+  `Weekday` varchar(45) DEFAULT NULL,
+  `Zone` varchar(45) DEFAULT NULL,
+  `Level` int(11) DEFAULT NULL,
+  `Hours` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

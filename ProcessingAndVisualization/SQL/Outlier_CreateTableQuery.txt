@@ -1,0 +1,78 @@
+###############Create table Query for Outlier Data###################################################### 
+ ------CO2_Value -------
+CREATE TABLE `co2_value` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Flag` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+###########################################################################################################
+--------Humidity_Value--------------------
+CREATE TABLE `humid_value` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Flag` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+###########################################################################################################
+--------Light_Value--------------------
+CREATE TABLE `light_value` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Flag` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+###########################################################################################################
+-------Noise_Value--------------------
+CREATE TABLE `noise_value` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Flag` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+################################################################################################################
+-------Temperature_Value--------------------
+CREATE TABLE `temp_value` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Flag` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+################################################################################################################
+-------VOC_Value--------------------
+CREATE TABLE `voc_value` (
+  `unitid` varchar(16) NOT NULL,
+  `noise_value` decimal(10,2) DEFAULT NULL,
+  `light_value` decimal(10,2) DEFAULT NULL,
+  `temp_value` decimal(10,2) DEFAULT NULL,
+  `co2_value` decimal(10,2) DEFAULT NULL,
+  `voc_value` decimal(10,2) DEFAULT NULL,
+  `humid_value` decimal(10,2) DEFAULT NULL,
+  `date_time` timestamp NULL DEFAULT NULL,
+  `Flag` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
